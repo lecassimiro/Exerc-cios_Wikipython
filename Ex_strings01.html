@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-size: 24pt;
+            color: rgb(56, 22, 22);
+        }
+    </style>
+</head>
+<script>
+    let texto1 = 'o rato roeu a roupa do rei de roma';
+    let texto2 = 'Alves esta de olho na coxinha';
+
+    document.write('String 1: ' + texto1);
+    document.write('<br>');
+    document.write('String 2: ' + texto2);
+    document.write('<br>');
+    document.write('Tamanho de "' + texto1 + '": ' + texto1.length + "caracteres<br>");
+    document.write('<br>');
+    document.write('Tamanho de "' + texto2 + '": ' + texto2.length + "caracteres<br>");
+    document.write('<br>');
+
+    let iguais = '';
+    if (texto1.length == texto2.length) {
+        iguais = 'As duas strings são de tamanhos iguais';
+    } else {
+        iguais = 'As duas strings são de tamanhos diferentes';
+    }
+    document.write(iguais);
+    document.write('<br>');
+
+    let conteudo_igual = '';
+    if (texto1.toLowerCase() == texto2.toLowerCase()) {
+        conteudo_igual = 'As duas strings possuem conteúdos iguais';
+    } else {
+        conteudo_igual = 'As duas strings possuem conteúdos diferentes';
+    }
+    document.write(conteudo_igual);
+    document.write('<br>');
+
+
+</script>
+</body>
+
+</html>

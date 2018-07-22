@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<script>
+    let letras = ['a', 'd', 'e', 'g', 'i', 'b', 'j', 'o', 'n', 'f'];
+    let consoantes = [];
+    for (let i = 0; i < letras.length; i++) {
+        let letra = letras[i];
+        if (isNaN(letra) &&
+            letra != 'a' &&
+            letra != 'e' &&
+            letra != 'i' &&
+            letra != 'o' &&
+            letra != 'u') {
+            consoantes.push(letra);
+        }
+    }
+    alert("Quantidade: " + consoantes.length + "Consoantes: " + consoantes);
+</script>
+
+</html> 
